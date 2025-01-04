@@ -15,7 +15,7 @@ const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <StrictMode>
     {" "}
-    <BrowserRouter>
+    <BrowserRouter basename="/NITkPedia">
       <Routes>
         <Route path="/" element={<App></App>}></Route>
         <Route path="/calendar" element={<Calendar />} />
