@@ -12,7 +12,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Time-Table"
-          imageUrl="public/timetable.png"
+          imageUrl="public\timetable.png"
           description="No fear of the timetable, we're just waiting for the holidays!"
           link="/timetable"
         />
@@ -56,7 +56,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="NIT Market Vendors Contacts"
-          imageUrl="market.png"
+          imageUrl="/market.png"
           description="The only place where you'll find snacks, study material, and a lot of last-minute excuses! "
           link="/nitmarket"
         />
@@ -67,7 +67,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="E-Rickshaw Driver Contacts"
-          imageUrl="erickshaw.png"
+          imageUrl="public/erickshaw.png"
           description="Masters of navigating NIT traffic,and always eager to explore the shortest route to your destination!"
           link="/erickshaw"
         />
