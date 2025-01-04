@@ -12,7 +12,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Time-Table"
-          imageUrl="timetable.png"
+          imageUrl="public/timetable.png"
           description="No fear of the timetable, we're just waiting for the holidays!"
           link="/timetable"
         />
