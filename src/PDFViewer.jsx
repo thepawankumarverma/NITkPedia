@@ -34,13 +34,13 @@ const PDFViewer = ({ pdfUrl }) => {
                 : "" 
         }}
       >
-        <Worker workerUrl={`/pdf.worker.min.js`}>
+        <Worker workerUrl={`pdf.worker.min.js`}>
           <Viewer fileUrl={pdfUrl} />
         </Worker>
       </div>
       <a
   href={pdfUrl}
-  download="document.pdf"
+  download="AcademicsCalendar2025.pdf"
   style={{
     textDecoration: "none",
     padding: "12px 24px",

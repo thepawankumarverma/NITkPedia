@@ -3,7 +3,7 @@ import PDFViewer from './PDFviewer'
 const Calendar = () => {
   return (
     <div>
- <PDFViewer pdfUrl='\NITkPedia\src\Academics Calender 2025.pdf' />
+ <PDFViewer pdfUrl='AcademicsCalender2025.pdf' />
     </div>
   )
 }
