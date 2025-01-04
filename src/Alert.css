@@ -1,0 +1,87 @@
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  animation: slide-down 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  max-width: fit-content;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 80%;
+  z-index: 1000;
+}
+.alert-message {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes slide-down {
+  from {
+    transform: translate(-50%, -120%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.alert-close {
+  background: none;
+  border: none;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000000;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 10;
+}
+@keyframes fadeOut {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the container */
+.fade-out-container {
+  animation: fadeOut 1.5s ease-out forwards; /* 3s duration, smooth fade-out */
+}
+
+.fade-hidden {
+  opacity: 0; /* Make it disappear */
+}
+
+.alert-close:hover {
+  transform: scale(1.2);
+}
+
+/* Types of alerts */
+.alert-info {
+  background-color: #2196f3;
+}
+
+.alert-success {
+  background-color: #4caf50;
+}
+
+.alert-warning {
+  background-color: #ff9800;
+}
+
+.alert-error {
+  background-color: #f44336;
+}

@@ -1,0 +1,151 @@
+/* Container styling */
+.shop-table-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: fit-content;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  .shop-table-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    
+  }
+  
+  /* Table styling */
+  .shop-table {
+    width: fit-content;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    
+     }
+  
+  .shop-table th,
+  .shop-table td {
+    padding: 15px;
+    text-align: center;
+    border: 0px solid #ddd;
+    width: 33.33%;
+   
+  }
+  
+  /* Header row styling */
+  .shop-table th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Row hover effect */
+  .shop-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .shop-table tr:hover {
+    background-color: #e8f5e9;
+    transition: background-color 0.3s;
+  }
+  
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    .shop-table-header {
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    /* Make the table horizontally scrollable */
+    .shop-table-container {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      -webkit-overflow-scrolling: touch;
+      max-width: fit-content; 
+      padding: 20px;
+      /* Smooth scrolling on iOS */
+    }
+  
+    .shop-table {
+      display: block; /* Make the table block-level for scroll */
+      width:fit-content;
+      margin-left:auto;
+      margin-right: auto;
+    }
+  
+    /* Ensure header remains visible */
+    .shop-table th {
+      position: sticky;
+      top: 0;
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      
+      z-index: 1; /* Ensure the header is above the rows */
+    }
+  
+    /* Keep table rows in their original layout, no stacking */
+    .shop-table tr {
+      display: table-row; 
+     /* Do not stack rows */
+    }
+  
+    /* Make each cell's content full width in scrollable table */
+    .shop-table td {
+      text-align: center;
+  
+    }
+  
+    /* Optional: Adjust padding for smaller screens */
+    .shop-table th, .shop-table td {
+      padding: 10px;
+      font-size: 15px;
+     
+    }
+  }
+  
+  /* Additional adjustments for very small screens */
+  @media (max-width: 480px) {
+    .shop-table-header {
+      font-size: 18px;
+      transform: translate(5%);
+
+    }
+    .shop-table {
+        width: fit-content;
+     
+         }
+    .shop-table-container {
+        padding: 10px;
+        max-width:fit-content;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        user-select: none;
+        box-sizing: border-box;
+        display: flex;               /* Enables flexbox on the container */
+        justify-content: center;     /* Horizontally center content */
+        align-items: center; 
+        flex-direction: column; 
+                 
+            /* Center items both horizontally and vertically */
+      
+      }
+    .shop-table th, .shop-table td {
+      padding: 9px;
+      font-size: 12px;
+      
+      
+     
+  
+      
+    }
+  }
+  

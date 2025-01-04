@@ -1,0 +1,72 @@
+
+  
+  /* Set the body to full height and give a background color */
+
+  
+  /* Container styling */
+  .construction-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 5%;
+    background: linear-gradient(180deg,250%#00db42,#005a17c5 10%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: zoomInOut 3s infinite alternate; /* Zoom in and out animation */
+  }
+  
+  /* Add a hover effect to the container */
+  .construction-container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the image */
+  .construction-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  
+  /* Style the message */
+  .construction-message {
+    font-size: 24px;
+    color: #333;
+    font-weight:600;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    animation: shine 3s infinite;
+  }
+  
+  /* Add shine effect to the message */
+  @keyframes shine {
+    0% {
+      color: #ffffff;
+    }
+    50% {
+      color: #ffffff;
+    }
+    100% {
+      color: #ffffff;
+    }
+  }
+  
+  /* Zoom in and out effect */
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Slight zoom in */
+    }
+    100% {
+      transform: scale(1); /* Zoom back to normal */
+    }
+  }
+  
+  /* Add a background color to the body */
+
+  
