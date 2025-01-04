@@ -12,7 +12,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Time-Table"
-          imageUrl="public/Artboard 2 (2).png"
+          imageUrl="timetable.png"
           description="No fear of the timetable, we're just waiting for the holidays!"
           link="/timetable"
         />
@@ -23,7 +23,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Calendar"
-          imageUrl="public\Artboard 1.png"
+          imageUrl="calendar.png"
           description="Check the holidays in the calendar, forget the syllabus!"
           link="/calendar"
         />
@@ -34,7 +34,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Syllabus"
-          imageUrl="public/rb_1167.png"
+          imageUrl="syllabus.png"
           description="Check the syllabus, then sleep in peace!"
           link="/syllabus"
         />
@@ -45,7 +45,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Upcoming Exam Datesheet"
-          imageUrl="public\rb_2754.png"
+          imageUrl="exam.png"
           description="Exam datesheet: The ultimate plot twist your semester needed!"
           link="/datesheet"
         />
@@ -56,7 +56,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="NIT Market Vendors Contacts"
-          imageUrl="public/rb_505.png"
+          imageUrl="market.png"
           description="The only place where you'll find snacks, study material, and a lot of last-minute excuses! "
           link="/nitmarket"
         />
@@ -67,7 +67,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="E-Rickshaw Driver Contacts"
-          imageUrl="public/rb_20041.png"
+          imageUrl="erickshaw.png"
           description="Masters of navigating NIT traffic,and always eager to explore the shortest route to your destination!"
           link="/erickshaw"
         />
@@ -78,7 +78,7 @@ export default function App() {
       value: (
         <ClickableContainer
           title="Miscellaneous"
-          imageUrl="public/rb_1523.png"
+          imageUrl="question.png"
           description="Looking for something else?"
           link="miscellaneous"
         />
