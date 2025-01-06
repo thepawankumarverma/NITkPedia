@@ -107,25 +107,6 @@ export default function App() {
           ? filteredItems.map((item) => item.value)
           : items.map((item) => item.value)}
       </div>
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<App />} />
-          <Route path="/calendar" element={<Calendar/>} />
-          <Route path="/datesheet" element={<Datesheet />} />
-          
-        </Route>
-      </Routes>
-    </BrowserRouter> */}
-
-      {/* 
-   <Routes>
-  
-  <Route path="miscellaneous" element={<Miscellaneous />} />
-
-
-
-</Routes> */}
     </div>
   );
 }
