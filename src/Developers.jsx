@@ -19,8 +19,11 @@ const Developers = ({isHover,setisHover,isDHover,setDHover}) => {
     </p>
     <p>
       <b>Connect with me: </b>
+      <br></br>
       <a href="https://github.com/thepawankumarverma" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/pawan-kumar-verma-804704308/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/pawan-kumar-verma-804704308/" target="_blank">LinkedIn</a>|
+     
+      <a href="https://www.instagram.com/the_pawankumarverma" target="_blank">Instagram</a>
     </p>
   </div>
 </div>

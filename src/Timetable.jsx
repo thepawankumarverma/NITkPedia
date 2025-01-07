@@ -359,6 +359,7 @@ const Timetable = () => {
       )}
       <div className="student-selector-container">
         <h2 className="title">Select Your Info</h2>
+        <text style={{color:"blue"}}>Some timetables have not yet been officially released.</text>
         <div className="selector-box">
           <div className="dropdown">
             <label htmlFor="semester">Semester:</label>
