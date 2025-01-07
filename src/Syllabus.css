@@ -1,5 +1,5 @@
 .student-selector-container {
-  max-width: 90%;
+  max-width: 75%;
   margin: 20px auto;
   padding: 15px;
   border: 1px solid #ccc;
@@ -64,9 +64,10 @@
   background-color: #0056b3;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .student-selector-container {
-      max-width: 400px;
+      max-width: 70%;
+      font-size:smaller;
   }
 
   .title {
@@ -87,3 +88,10 @@
       font-size: 1rem;
   }
 }
+@media (max-width: 480px) {
+  .student-selector-container {
+      width: 70%;
+      font-size: smaller;
+  }
+}
+
