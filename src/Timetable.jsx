@@ -94,7 +94,7 @@ const Timetable = () => {
       value: (
         <div>
           <PDFViewer
-            pdfUrl="public\BranchWiseSyllabus\AIML\2ndSemester.pdf"
+            pdfUrl="BranchWiseSyllabus\AIML\2ndSemester.pdf"
             button="2nd Semester AIML"
           />
         </div>
