@@ -1,7 +1,7 @@
 import React from "react";
 import "./Syllabus.css";
 import Alert from "./Alert";
-import { useState } from "react"; 
+import { useState } from "react";
 import PDFViewer from "./PDFviewer";
 
 const Timetable = () => {
@@ -14,7 +14,23 @@ const Timetable = () => {
     { semester: "Select Semester", branches: ["Select Branch"] },
     {
       semester: "2nd Semester",
-      branches: ["Select Branch","IIOT", "Microelectronics and VLSI"],
+      branches: [
+        "Select Branch",
+        "AIDS",
+        "AIML",
+        "Civil Engineering",
+        "Computer Science",
+        "ECE",
+        "Electrical Engineering",
+        "IIOT",
+        "IT",
+        "M&C",
+        "Mechnical Engineering",
+        "Microelectronics and VLSI",
+        "PIE",
+        "RA",
+        "SET",
+      ],
     },
 
     {
@@ -63,23 +79,155 @@ const Timetable = () => {
   );
   const syllabuses = [
     {
-      title: "2nd SemesterIIOT",
+      title: "2nd SemesterAIDS",
       value: (
         <div>
           <PDFViewer
-            pdfUrl="BranchWiseSyllabus\IIOT\2ndsemester.pdf"
+            pdfUrl="BranchWiseSyllabus\AIDS\2ndsemester.pdf"
+            button="2nd Semester AIDS"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterAIML",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="public\BranchWiseSyllabus\AIML\2ndSemester.pdf"
+            button="2nd Semester AIML"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterCivil engineering",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\Civilengineering\2ndsemester.pdf"
+            button="2nd Semester Civil Eng."
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterComputer science",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\Computerscience\2ndsemester.pdf"
+            button="2nd Semester CS"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd Semesterece",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\ECE\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester ECE"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesteriiOT",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\IIOT\2ND-SEMESTER-TT-2024-25.pdf"
             button="2nd Semester IIOT"
           />
         </div>
       ),
     },
     {
-      title: "2nd SemesterMicroelectronics and VLSI",
+      title: "2nd SemesterElectrical Engineering",
       value: (
         <div>
           <PDFViewer
-            pdfUrl="BranchWiseSyllabus\MicroelectronicsandVlsi\2ndsemester.pdf"
-            button="2nd Semester Microelectronics and VLSI"
+            pdfUrl="BranchWiseSyllabus\Electricalengineering\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester EE"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd Semesterit",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\Informationtechnology\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester IT"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd Semesterm&c",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\M&C\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester M&C"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterMechnical Engineering",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\Mechanicalengineering\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester Mech."
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterMicroelectronics and Vlsi",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\MicroelectronicsandVlsi\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester VLSI"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterPIE",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\PIE\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester PIE"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterRA",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\RA\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester RA"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "2nd SemesterSET",
+      value: (
+        <div>
+          <PDFViewer
+            pdfUrl="BranchWiseSyllabus\SET\2ND-SEMESTER-TT-2024-25.pdf"
+            button="2nd Semester SET"
           />
         </div>
       ),
@@ -249,7 +397,7 @@ const Timetable = () => {
         </div>
       ),
     },
-  {
+    {
       title: "8th SemesterCivil engineering",
       value: (
         <div>
@@ -326,20 +474,16 @@ const Timetable = () => {
         </div>
       ),
     },
-    
   ];
   let x;
-  if(semester==="Select Semester" && branch==="Select Branch"){
-    x="Select Semester";
-  }
-  else if(semester==="Select Semester"){
-    x=branch;
-  }
-  else if(branch==="Select Branch"){
-    x=semester;
-  }
-  else{
-    x=semester+branch;
+  if (semester === "Select Semester" && branch === "Select Branch") {
+    x = "Select Semester";
+  } else if (semester === "Select Semester") {
+    x = branch;
+  } else if (branch === "Select Branch") {
+    x = semester;
+  } else {
+    x = semester + branch;
   }
 
   const filteredSyllabus = syllabuses.filter((syllabus) =>
@@ -359,7 +503,9 @@ const Timetable = () => {
       )}
       <div className="student-selector-container">
         <h2 className="title">Select Your Info</h2>
-        <text style={{color:"blue"}}>Some timetables have not yet been officially released.</text>
+        <text style={{ color: "blue" }}>
+          Some timetables have not yet been officially released.
+        </text>
         <div className="selector-box">
           <div className="dropdown">
             <label htmlFor="semester">Semester:</label>
