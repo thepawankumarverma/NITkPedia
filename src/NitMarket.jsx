@@ -20,7 +20,7 @@ const NitMarket = () => {
     {
       shopNo: "3",
       shopName: "M/s. VISION SALES",
-      mobileNumber: [""],
+      mobileNumber: ["8607996516"],
     },
     {
       shopNo: "4",
