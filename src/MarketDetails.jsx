@@ -3,10 +3,10 @@ import "./ShopTable.css"; // Importing the CSS file
 import Alert from "./Alert";
 
 const ShopTable = ({ shops,title="NIT Market Shops",col1="Shop Number",col2="Shop Name",col3="Mobile Number" }) => {
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
+  const copyToClipboard = (name,number) => {
+    navigator.clipboard.writeText(number);
     setAlertVisible(true);
-    setMessage(`${text}`);
+    setMessage(`${name}`);
   };
   const [alertVisible, setAlertVisible] = useState(false);
   const [message, setMessage] = useState("");
@@ -46,7 +46,7 @@ const ShopTable = ({ shops,title="NIT Market Shops",col1="Shop Number",col2="Sho
                         <i
                           className="fa fa-copy"
                           style={{ marginRight: "10px", cursor: "pointer" }}
-                          onClick={() => <>{copyToClipboard(shop.shopName)}</>}
+                          onClick={() => <>{copyToClipboard(shop.shopName,num)}</>}
                         ></i>
                       </>
                     )

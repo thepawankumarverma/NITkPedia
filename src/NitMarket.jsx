@@ -45,7 +45,7 @@ const NitMarket = () => {
     {
       shopNo: "9",
       shopName: "M/s. GARG ENTERPRISES",
-      mobileNumber: ["88149100000", "9996820635"],
+      mobileNumber: ["8814910000", "9996820635"],
     },
   ];
   return (
