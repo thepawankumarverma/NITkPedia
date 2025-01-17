@@ -35,12 +35,12 @@ const NitMarket = () => {
     {
       shopNo: "7",
       shopName: "M/s. CHOICE HAIR DRESSER",
-      mobileNumber: [""],
+      mobileNumber: ["9350959569","9050665142"],
     },
     {
       shopNo: "8",
       shopName: "CONFECTIONERY SHOP",
-      mobileNumber: [""],
+      mobileNumber: ["7206041396"],
     },
     {
       shopNo: "9",
